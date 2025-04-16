@@ -1,0 +1,451 @@
+/* 전체 페이지 배경 및 레이아웃 */
+.co-detail-page {
+  background-color: #eef5fc; /* 연한 파랑/회색 배경 */
+  min-height: 100vh;
+  padding-top: 80px; /* 고정 헤더 높이에 맞춰 여백 */
+}
+
+/* 메인 컨테이너 */
+.co-detail-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.co-detail-title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.co-detail-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.co-detail-edit-btn,
+.co-detail-delete-btn,
+.co-detail-complete-btn {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.co-detail-edit-btn {
+  background-color: #3A5E8D;
+  color: white;
+}
+
+.co-detail-delete-btn, .co-detail-complete-btn {
+  background-color: #3A5E8D;
+  color: white;
+}
+
+.co-detail-post-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1A2A4D;
+  margin: 0;
+}
+
+.co-detail-info-text {
+  padding: 15px 0;
+  border-top: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.co-detail-info-text span {
+  margin-right: 15px;
+}
+
+.co-detail-info-text span:last-child {
+  margin-right: 0;
+}
+
+/* 상단 "← 공지사항" 영역 */
+.co-detail-topbar {
+  display: flex;
+  align-items: center;
+  background-color: #fff; /* 🔹 배경 흰색 적용 */
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 🔹 박스 그림자 추가 */
+}
+.co-detail-topbar2 {
+  display: flex;
+  align-items: center;
+  /* background-color: #fff; */
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+
+.co-detail-back-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-right: 8px;
+  color: #1A2A4D;
+  font-weight: bold;
+}
+
+.co-detail-top-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1A2A4D;
+}
+
+
+/* 흰색 박스 */
+.co-detail-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px 30px 30px;
+}
+
+/* 게시글 제목 */
+.co-detail-post-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1A2A4D;
+}
+
+/* 본문 내용 */
+.co-detail-content {
+  min-height: 200px; /* 본문 영역 높이 (임의값) */
+  background-color: #f9fcff;
+  border-radius: 5px;
+  padding: 5px 25px;
+  margin-bottom: 20px;
+  color: #444;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+/* 첨부파일 영역 */
+.co-detail-file {
+  background-color: #edf3fa;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: #444;
+  min-height: 60px; /* 파일 영역 높이 (임의값) */
+  font-weight: bold;
+}
+
+/* 실제 input 숨기기 */
+.co-detail-file-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.co-detail-file-list h4 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: #333;
+}
+
+.co-detail-file-list p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* 커스텀 파일 선택 버튼 */
+.co-detail-file-label {
+  display: inline-block;
+  padding: 5px 12px;
+  background-color: #3A5E8D;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* 파일명 표시 */
+.co-detail-file-name {
+  margin-left: 10px;
+  color: #444;
+  font-size: 14px;
+}
+
+/* 파일 영역 전체 스타일 */
+.co-detail-file {
+  background-color: #edf3fa;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #444;
+  min-height: 100px;
+  font-weight: bold;
+}
+
+
+.co-detail-content-editable {
+  outline: none;
+  min-height: 150px;
+}
+
+/* 답변 영역 스타일 */
+
+.co-detail-answer-title {
+font-size: 1.2rem;
+font-weight: bold;
+color: #1A2A4D;
+margin: 0;
+padding-left: 11px;
+}
+
+.co-detail-answer-input-area-full {
+min-height: 130px;
+}
+
+.co-detail-answer-input-area {
+background-color: #edf3fa;
+border-radius: 5px;
+padding: 10px 15px;
+
+}
+
+.co-detail-answer-input {
+width: 100%;
+min-height: 60px;
+font-size: 14px;
+background-color: #edf3fa;
+outline: none;
+}
+
+.co-detail-answer-input:empty:before {
+content: attr(placeholder);
+color: #adb5bd;
+}
+
+.co-detail-answer-input:focus:before {
+content: '';
+}
+
+.co-detail-answer-submit {
+float: right;
+padding: 6px 16px;
+background-color: #3A5E8D;
+color: white;
+border: none;
+border-radius: 10px;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.2s;
+margin-top: 15px;
+}
+
+.co-detail-answer-submit:hover {
+background-color: #2d4a70;
+}
+
+/* 질문과 답변 섹션 구분 */
+.question-section {
+margin-bottom: 20px;
+}
+
+.answer-section {
+margin-top: 10px;
+border-radius: 10px;
+}
+
+.answer-section .co-detail-card {
+border: 1px solid #E2E8F0;
+margin-top: 0;
+}
+
+/* 댓글 작성 후 스타일 */
+.co-detail-answer-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 10px;
+padding: 0 5px 0 0;
+}
+
+.co-detail-answer-item {
+background-color: #edf3fa;
+border-radius: 4px;
+padding: 15px;
+min-height: 90px;
+}
+
+.co-detail-answer-info {
+display: flex;
+justify-content: flex-start;
+gap: 10px;
+align-items: center;
+margin-bottom: 5px;
+}
+
+
+.co-detail-answer-profile {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.co-detail-answer-writer {
+font-weight: bold;
+color: #1A2A4D;
+}
+
+.co-detail-answer-time {
+font-size: 12px;
+color: #6c757d;
+}
+
+.co-detail-answer-buttons {
+display: flex;
+gap: 8px;
+}
+
+.co-detail-answer-edit,
+.co-detail-answer-delete {
+padding: 4px 12px;
+border: none;
+border-radius: 10px;
+font-size: 12px;
+font-weight: bold;
+cursor: pointer;
+background-color: #3A5E8D;
+color: white;
+}
+
+.co-detail-answer-content {
+font-size: 16px;
+line-height: 1.6;
+color: #444;
+margin-top: 10px;
+background-color: #EDF3FA;
+padding: 10px 20px;
+border-radius: 10px;
+
+}
+
+.co-detail-no-answer {
+font-size: 18px;
+text-align: center;
+padding: 10px;
+font-weight: bold;
+color: #1A2A4D;
+}
+
+.co-detail-answer-info-content {
+margin-left: 40px;
+}
+
+.co-detail-answer-info-img {
+width: 30px;
+height: 30px;
+}
+
+.co-detail-answer-input:empty:before {
+content: attr(placeholder);
+color: #adb5bd;
+}
+
+.co-detail-post-title-input {
+font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1A2A4D;
+  border: none;
+}
+
+.co-detail-file-download-btn {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  padding: 5px 20px;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-right: 10px;
+}
+
+
+/* 첨부파일 버튼 컨테이너 수정 */
+.co-detail-file-buttons {
+  gap: 10px;        /* 버튼 사이의 간격 */
+  margin-top: 10px;
+}
+
+.p-file-name {
+  color: #495057;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+.co-detail-file-download-btn:hover {
+background-color: #f1f5f9;
+border-color: #cbd5e1;
+}
+
+
+.co-detail-file-upload {
+margin-top: 15px;
+}
+
+.co-detail-file-input {
+display: none;
+}
+
+.co-detail-selected-files {
+  display: flex;   /* 가로 배치 */
+  flex-wrap: wrap; /* 넘치면 다음 줄로 */
+  gap: 8px;       /* 아이템 간격 */
+  margin-top: 10px;
+}
+
+.co-detail-file-item {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  padding: 5px 5px 5px 10px;
+  margin: 5px 0;
+   border: 1px solid #dee2e6;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.co-detail-file-remove {
+background: none;
+border: none;
+color: #ff4444;
+cursor: pointer;
+font-size: 15px;
+}
+
+.co-detail-content-view img,
+.co-detail-content-editable img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+

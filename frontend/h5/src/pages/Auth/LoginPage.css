@@ -1,0 +1,206 @@
+.login-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #DEF0FF 0%, #FFFFFF 100%);
+  position: relative;
+  overflow: hidden;
+ }
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  max-width: 650px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 0.5rem 5.5rem 1rem 5.5rem;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.characters-container {
+  display: flex;
+  justify-content: center;
+}
+
+.character {
+  width: 170px;
+  height: 170px;
+  object-fit: contain;
+}
+
+.l-logo {
+  width: 100px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.tabs {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.8rem;
+  gap: 1rem;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #DEF0FF;
+  background: #DEF0FF;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: black;
+}
+
+.tab.active {
+  color: white;
+  background: #56A0E5;
+  border-color: #56A0E5;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-input {
+  width: 100%;
+  padding: 0.8rem 0 0.8rem 2rem;
+  border: 1px solid #A3D6FF;
+  border-radius: 10px;
+}
+
+.login-input:focus {
+  outline: none;
+  box-shadow: none;
+  border: 3px solid #A3D6FF;
+ }
+ 
+ .login-input:hover {
+  border-color: #A3D6FF;
+ }
+
+.save-id {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.save-id-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #2196F3;
+  border-radius: 50%;
+  cursor: pointer;
+ }
+ 
+ .save-id-checkbox:checked {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232196F3' stroke-width='2'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E") center/contain no-repeat;
+ }
+
+.login-button {
+  width: 100%;
+  background: #69A6DF !important;
+  border: none !important;
+  padding: 0.9rem !important;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.register-link {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.register-link a {
+  text-decoration: none;
+  color: inherit;
+  }
+
+  .clouds {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .cloud {
+    position: absolute;
+    opacity: 0.8;
+  }
+  
+  .cloud1 {
+    top: 25%;
+    width: 200px;
+    animation: float 20s linear infinite;
+  }
+  
+  .cloud2 {
+    top: 55%;
+    width: 150px;
+    animation: float 15s linear infinite;
+    animation-delay: -5s;
+  }
+  
+  .cloud3 {
+    top: 75%;
+    width: 180px;
+    animation: float 18s linear infinite;
+    animation-delay: -10s;
+    animation-direction: reverse;
+  }
+
+  .cloud4 {
+    top: 8%;
+    width: 200px;
+    animation: float 19s linear infinite;
+  }
+  
+  .cloud5 {
+    top: 40%;
+    width: 150px;
+    animation: float 25s linear infinite;
+    animation-delay: -8s;
+    animation-direction: reverse;
+  }
+  
+  .cloud6 {
+    top: 90%;
+    width: 180px;
+    animation: float 18s linear infinite;
+    animation-delay: -12s;
+  }
+  
+  @keyframes float {
+    from {
+      left: -200px;
+    }
+    to {
+      left: 100%;
+    }
+  }
+
+

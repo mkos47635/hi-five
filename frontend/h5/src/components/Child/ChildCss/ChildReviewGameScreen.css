@@ -1,0 +1,66 @@
+.ch-game-screen-container {
+    display: flex;
+    justify-content: center;
+    /* font-family: "Jua"; */
+    border-radius: 3%;
+    background-color: rgb(251, 251, 251);
+
+}
+
+.ch-game-screen-container h2 {
+    text-align: center;
+    font-family: "Jua";
+    font-size: 140%;
+    padding-top: 2px;
+    margin-bottom: 5px;
+}
+
+.ch-game-screen-container h3 {
+    text-align: center;
+    font-family: "Jua";
+    font-size: 150%;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.ch-game-screen {
+    width: 720px;
+    height: 540px;
+    min-height: 350px;
+}
+
+.ch-gameVideo{
+    display: block;  
+    margin: 0 auto; 
+    width: 80%;
+    height: 80%;
+}
+
+.ch-game-button{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.ch-game-button img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.ch-option{
+    border: none;
+    background-color:  rgb(251, 251, 251);
+}
+
+.ch-options-number{
+    margin-bottom: 3px;
+    text-align: center;
+}
+.ch-options-selection{
+    margin-top: 3px;
+    text-align: center;
+
+}

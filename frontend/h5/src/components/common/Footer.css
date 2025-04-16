@@ -1,0 +1,55 @@
+.footer {
+    background-color: #47637A;
+    padding: 10px;
+    color: white;
+  }
+
+  .co_footer_logo {
+    height: 25px;
+    width: auto;
+    margin-top: 12px;
+  }
+  
+  .footer-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8rem;
+  }
+  
+  .footer-links li {
+    cursor: pointer;
+  }
+  
+  .copyright {
+    margin: 0;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  hr {
+    border: none;
+    border-bottom: 0.5px solid #ccc;
+  }
+
+  .footer_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 0 50px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+
+  .footer-right > span {
+    font-size: 0.7rem;
+  }

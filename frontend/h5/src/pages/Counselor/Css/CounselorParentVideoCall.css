@@ -1,0 +1,185 @@
+.co-cp-consultation-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0c0c1d;
+    height: 100vh;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* 로고 스타일 */
+  .co-logoo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 10;
+    height: 40px;
+    width: auto;
+  }
+
+  
+  /* 비디오 레이아웃 컨테이너 */
+  .co-cp-video-layout {
+    display: flex;
+    gap: 5px;
+    width: 85%;
+    height: calc(100vh - 140px);
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .co-error{
+    color: #848282;
+  }
+  
+  /* 공유화면 */
+
+
+  .co-share-counselor-cam {
+    width: 90%; /* 부모 요소 대비 크기 조정 */
+    aspect-ratio: 16 / 9; /* 가로 세로 비율 유지 */
+    border-radius: 15px; /* 모서리 둥글게 */
+  }
+  
+  .co-share-counselor-cam video {
+    width: 90%;
+    height: 100%;
+    border-radius: 15px; /* 모서리 둥글게 */
+    object-fit: cover; /* 비율 유지하며 꽉 채우기 */
+    margin-left: 3rem;
+  }
+  
+
+  /* 비디오 */
+/* 비디오 컨테이너 */
+.co-cp-participant-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* h3를 절대 위치로 배치하기 위한 기준 */
+}
+
+
+
+/* 글자 스타일 */
+.co-cp-participant-container h3 {
+  position: absolute;
+  left: 50%;
+  top: 15rem;
+  transform: translateX(-50%);
+  color: aliceblue;
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.5); /* 배경 추가 (가독성 개선) */
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+
+
+  
+  /* 참여자 비디오 */
+  .co-cp-participant-videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    position: relative;
+    top: -4.5%;
+    right: -10.5rem;
+
+    /* padding: 310px 0; */
+  }
+
+  .counselor-cam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* 필요에 따라 조정 */
+    max-width: 30rem; /* 최대 크기 제한 */
+    border-radius: 15px;
+    overflow: hidden; /* 넘치는 부분 잘라내기 */
+  }
+  
+  .counselor-cam video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 꽉 채우면서 크기 조정 */
+    transform: scaleX(-1);
+  }
+
+  
+  .co-cp-participant {
+    width: 100%;
+    aspect-ratio: 13 / 9;
+    background: black;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+ /* 버튼  */
+  .web-cp-button-controls-container {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 0px;
+    z-index: 10;
+  }
+  
+  .web-cp-control-btn {
+    background: #fffefe;
+    color: rgb(4, 4, 4);
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .web-cp-control-btn:hover {
+    background: #666;
+  }
+  
+  .web-cp-control-btn.end-call {
+    background: #dc3545;
+  }
+  
+  .web-cp-control-btn.end-call:hover {
+    background: #c82333;
+  }
+  
+
+   
+  /* 반응형 디자인 */
+   @media (max-width: 768px) {
+    .co-cp-video-layout {
+      flex-direction: column;
+    }
+  
+    .co-cp-main-video {
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .co-cp-participant-videos {
+      width: 100%;
+      flex-direction: row;
+      height: 150px;
+      padding: 0;
+    }
+  
+    .co-cp-participant {
+      height: 100%;
+      width: 200px;
+    }
+}

@@ -1,0 +1,203 @@
+.co-consultation-child-page {
+  height: 100%;
+}
+
+.co-child-main-video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0c0c1d;
+    padding: 20px;
+    position: relative;
+  }
+ 
+  /* 로고 스타일 */
+  .co-logoo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 10;
+    height: 30px;
+    width: auto;
+  }
+  
+/* 비디오 레이아웃 */
+/* 부모 컨테이너 */
+/* 부모 컨테이너 */
+.co-video-layout {
+  display: flex;
+  width: 75%;  /* 부모 크기를 100%로 설정하여 화면을 꽉 채움 */
+  height: 80vh;  /* 화면 높이에 맞춤 */
+  margin-bottom: 0;
+  margin-top: 9rem;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  left: 9rem;
+  position: relative; /* 상대 위치 유지 */
+}
+
+/* 아동의 화면 공유 */
+.co-child-main-video-container {
+  position: absolute;  /* 부모 크기에 맞게 비디오 확장 */
+  top: -7rem;
+  left: 0;
+  width: 100%;  /* 부모 컨테이너 크기 */
+  height: 100%;  /* 화면 크기 */
+  border-radius: 10px;
+}
+
+.co-main-video-container {
+  width: 100%;  /* 화면 크기 */
+  height: 100%;  /* 화면 크기 */
+  object-fit: cover;  /* 비디오가 화면을 덮도록 */
+  border-radius: 10px;
+}
+
+
+
+  /* 참여자 비디오 */
+  .co-self-participant-video {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    width: 30%;
+    justify-content: flex-end;
+    padding-bottom:0;
+    margin-top: 30rem;
+  }
+  
+
+/* 비디오 */
+/* 상담사 화면 (작게 겹치는 부분) */
+.co-participant-coun-container {
+  position: absolute;  /* 부모 컨테이너에 절대 위치 설정 */
+  bottom: 5%;  /* 화면 아래에서 10% 위치 */
+  right: -17%;  /* 화면 오른쪽에서 10% 위치 */
+  width: 25%;  /* 화면 크기의 30% */
+  height: 35%;  /* 화면 크기의 30% */
+  border-radius: 20px;  /* 모서리 둥글게 */
+  z-index: 1;  /* 아동 화면보다 위로 설정 */
+  background-color: rgba(0, 0, 0, 0.3);  /* 비디오를 좀 더 부드럽게 보여주기 위해 반투명 배경 */
+}
+
+.co-participant-coun-container video {
+  width: 100%;  /* 화면에 맞게 비디오 크기 조정 */
+  height: 100%;  /* 화면에 맞게 비디오 크기 조정 */
+  object-fit: cover;  /* 비디오가 화면을 덮도록 */
+  border-radius: 20px;  /* 모서리 둥글게 */
+}
+  
+
+  .co-error p{
+    color: #0c0c1d;
+  }
+  
+  /* 컨트롤 버튼 */
+  .co-button-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 0px;
+    z-index: 10;
+    position: absolute;
+    top: 80%;  /* 상단 75% 위치 */
+    left: 54%;  /* 수평 중앙 */
+    transform: translateX(-70%); /* 수평으로 정확히 중앙 정렬 */
+    background-color: bisque;
+    opacity: 90%;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .co-button-controls p{
+    align-items: center;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  
+  .web-control-btn {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .web-control-btn:hover {
+    background: #666;
+  }
+  .web-record-btn,
+  .web-co-end-call {
+    background: #de4453;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .web-record-btn:hover {
+    background: #c82333;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  /* 반응형 디자인 */
+  @media (max-width: 768px) {
+    .co-video-layout {
+      flex-direction: column;
+    }
+  
+    .co-main-video-container {
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .co-participatn-coun-container {
+      width: 100%;
+      flex-direction: row;
+      height: 150px;
+      padding: 0;
+    }
+  
+    .co-participant {
+      height: 100%;
+      width: 200px;
+    }
+  }

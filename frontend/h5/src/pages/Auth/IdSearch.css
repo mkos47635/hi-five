@@ -1,0 +1,146 @@
+.app-container {
+  background: linear-gradient(to bottom, #DEF0FF, white);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  position: fixed;
+  top: 20px;
+  left: 0px;
+}
+
+.auth_logo {
+  height: 40px;
+  width: auto;
+}
+
+.error-message {
+  color: rgb(230, 64, 64) !important;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.Id_card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0.5rem;
+  width: 600px;
+  margin: 6rem auto 0 auto;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.Id_card-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 35px;
+}
+
+.input-field {
+  width: 100%;
+  border: 1px solid #A3D6FF !important;
+}
+
+.input-field:focus {
+  border: 1.5px solid #A3D6FF !important;
+  outline: none !important;
+ }
+
+.input-container {
+  margin-bottom: 1.0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+}
+
+.input-container small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #999;
+}
+
+small {
+  text-align: right;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 50px auto 10px auto;
+  height: 47px;
+}
+
+.find-button {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 48px;
+  border-radius: 8px;
+  border: none;
+  color: #9D9D9F;
+  font-weight: bold;
+}
+
+.cancel-button {
+  flex: 1;
+  background-color: #DEF0FF;
+  padding: 8px 24px;
+  border-radius: 8px;
+  border: none;
+  color: #9D9D9F;
+}
+
+.cancel-button:hover, .find-button:hover {
+  background-color: #B7DEFF !important;
+  cursor: pointer;
+ }
+
+.input-container p {
+  font-size: 18px; 
+  font-weight: bold; 
+}
+
+.small-container {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.input-field::placeholder {
+  color: #888585 !important;
+  font-weight: bold;
+ }
+
+ .input-container .input-field.p-dropdown .p-dropdown-label {
+  color: #888585 !important;
+  font-weight: bold;
+ }
+
+.input-container .input-field.p-dropdown {
+  padding: 3.5px 0 3.5px 5px;
+}
+
+ .find-button, .cancel-button {
+  outline: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+ }
+
+ a {
+  text-decoration: none;
+  color: inherit;
+ }
+
+

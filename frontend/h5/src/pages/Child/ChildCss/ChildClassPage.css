@@ -1,0 +1,246 @@
+.ch-review-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 100px;
+  gap: 70px;
+  position: relative; /* 부모 요소 기준 */
+}
+
+.ch-review-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("/test/sample3.jpg");
+  background-size: cover;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.ch-review-game-left,
+.ch-review-game-right {
+  width: 40%;
+}
+
+.ch-game-screen-container {
+  display: flex;
+  justify-content: center;
+  /* font-family: "Jua"; */
+  border-radius: 3%;
+  background-color: rgb(251, 251, 251);
+}
+
+.ch-game-screen-container h2 {
+  text-align: center;
+  font-family: "Jua";
+  font-size: 140%;
+  padding-top: 2px;
+  margin-bottom: 5px;
+}
+
+.ch-game-screen-container h3 {
+  text-align: center;
+  font-family: "Jua";
+  font-size: 150%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.ch-game-screen {
+  width: 720px;
+  height: 540px;
+  min-height: 350px;
+}
+
+.ch-gameVideo {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+}
+
+.ch-game-button {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ch-game-button img {
+  width: 100%;
+  height: 100%;
+}
+
+.ch-option {
+  cursor: pointer;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  appearance: none;
+  align-items: center;
+  background-color: transparent; /* 배경색 제거 */
+  border: none; 
+  position: relative;
+  background-color: aliceblue;
+}
+
+.ch-option-selection {
+  margin-top: 3px;
+  text-align: center;
+}
+
+.ch-game-Top-section {
+  height: 40vh;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(251, 251, 251);
+}
+
+.ch-game-child-screen {
+  width: 95%;
+  height: 80%;
+  min-height: 35vh;
+  min-width: 35vw;
+}
+
+.ch-learning-middle-section {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    #e0e0e0,
+    #f5f5f5 20%,
+    #e0e0e0 40%,
+    #d0d0d0 60%,
+    #e0e0e0 80%,
+    #f5f5f5
+  );
+  position: relative;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ch-learning-bottom-section {
+  height: 40vh;
+  width: 100%;
+  display: flex !important;
+  flex-direction: row !important;
+  border-radius: 2%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  background-color: rgb(251, 251, 251);
+}
+/* 218, 186, 255 */
+
+.ch-learning-button-right,
+.ch-learning-button-left {
+  margin-top: 8.5rem;
+  width: 20%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ch-learning-button-right p,
+.ch-learning-button-left p {
+  text-align: center;
+  font-family: "Jua";
+  margin-bottom: 0;
+}
+
+
+.ch-learning-counselor-screen {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ch-learning-stop-icon{
+  box-sizing: border-box;
+  color: rgb(203, 39, 39);
+  color-scheme: light;
+  display: block;
+  fill: rgb(203, 39, 39);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  font-size: 64px; /* 아이콘 크기 */
+  font-variation-settings: normal;
+  height: 2.5rem; /* 아이콘의 높이 */
+  width: 2.5rem; /* 아이콘의 너비 */
+  overflow: visible; /* 아이콘 잘림 방지 */
+}
+
+
+.ch-learning-button-left img,
+.ch-learning-button-right img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain; /* 이미지 비율 유지 */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.ch-child-videoScreen {
+  width: 50vw;
+  height: 50vh;
+}
+
+
+/* 옵션 이미지와 텍스트를 담는 개별 컨테이너 */
+.learning-option-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 calc(33.33% - 10px);
+  max-width: calc(33.33% - 10px);
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* 옵션 이미지 컨테이너: 가로 배열, 부모 너비에 맞게 설정 */
+.option-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  width: 87%;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+/* 옵션 이미지 스타일 */
+.option-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 옵션 텍스트 스타일 */
+.option-text {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Jua";
+}
+
+.ch-learning-before-answer {
+  font-family: "Jua";
+}
+
+.ch-learning-correct-answer {
+  font-family: "Jua";
+  background-color: rgb(104, 194, 222);
+}

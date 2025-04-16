@@ -1,0 +1,35 @@
+body {
+  background: linear-gradient(to bottom, #def0ff, #ffffff 100%); /* 원하는 색상 */
+  scroll-behavior: smooth;
+}
+
+.ch-card-main-container {
+  padding-top: 8%;
+  background: linear-gradient(to bottom, #def0ff, #ffffff 100%);
+  height: 100vh;
+  width: 102%;
+  position: relative;
+  overflow: visible;
+  scroll-behavior: smooth;
+}
+.ch-card-main-title {
+  font-family: "Jua";
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: fixed;
+  width: 100%;
+  margin-top: 0;
+  top: 7%;
+}
+
+
+.ch-card-big-list {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: 100%;
+  gap: 2rem;
+  padding: 1rem 15rem 0rem 9rem;
+  overflow-x: auto;
+}

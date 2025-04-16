@@ -1,0 +1,281 @@
+@import "primereact/resources/themes/lara-light-indigo/theme.css"; /* 테마 */
+@import "primereact/resources/primereact.min.css"; /* 코어 css */
+@import "primeicons/primeicons.css"; /* 아이콘 */
+@import "primeflex/primeflex.css"; /* flexbox & grid */
+
+.ch-main-container {
+  position: relative;
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.ch-main-foreground {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.ch-childName {
+  color: rgb(55, 191, 182);
+  display: inline;
+}
+
+/* 로그인상태 스타일 */
+.ch-login-state {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px !important;
+  margin: auto;
+  margin-bottom: 30px;
+  background: #ffffff !important;
+  position: relative;
+  max-width: 600px;
+  pointer-events: auto;
+}
+
+/* 카드 내부 텍스트 스타일링 */
+.ch-login-state .p-card-body {
+  text-align: center;
+  padding: 20px 40px;
+  font-size: clamp(18px, 2.5vw, 24px); /* 반응형 폰트 크기 */
+  font-weight: 600; /* 글씨 진하게 */
+}
+
+/* 각 기능으로 이동하는 페이지 스타일일 */
+.ch-menu-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2열 그리드 */
+  gap: 20px; /* 카드 사이 간격 */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  pointer-events: auto;
+  position: relative;
+}
+
+/* 각 기능 이미지 스타일 */
+/* 카드 상자 */
+.ch-class-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  width: 80%;
+  gap: 5px;
+}
+
+.ch-today-class-img {
+  display: left;
+  width: 35%;
+}
+
+.ch-today-class-img img {
+  width: 100%;
+  margin-top: 5%;
+  height: auto;
+}
+
+.ch-today-class-content {
+  display: right;
+  width: 60%;
+}
+
+.ch-today-class-content p {
+  font-size: clamp(14px, 2vw, 18px); /* 반응형 폰트 크기 */
+  color: #333;
+  margin-left: 10px;
+  margin-top: 2px;
+  text-align: center; /* 가운데 정렬 */
+  width: 100%;
+  line-height: 1.5;
+}
+
+/* 복습하기 */
+.ch-review-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  width: 80%;
+  gap: 5px;
+}
+
+.ch-review-img {
+  display: left;
+  width: 35%;
+}
+
+.ch-review-img img {
+  width: 100%;
+  margin-top: 5%;
+  height: auto;
+}
+
+.ch-review-content {
+  display: right;
+  width: 60%;
+}
+
+.ch-review-content p {
+  font-size: clamp(14px, 2vw, 18px); /* 반응형 폰트 크기 */
+  color: #333;
+  margin-left: 10px;
+  margin-top: 2px;
+  text-align: center; /* 가운데 정렬 */
+  width: 100%;
+  line-height: 1.5;
+}
+
+/* 카드상자 */
+.ch-cardmain-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  width: 80%;
+  gap: 5px;
+}
+
+.ch-cardmain-page-img {
+  display: left;
+  width: 35%;
+  align-items: center;
+}
+
+.p-card-content{
+  padding: 0;
+}
+
+.ch-cardmain-page-img img {
+  width: 80%;
+  margin-top: 5%;
+  height: 40%;
+}
+
+.ch-cardmain-page-content {
+  display: right;
+  width: 60%;
+  align-items: center;
+}
+
+.ch-cardmain-page-content p {
+  font-size: clamp(14px, 2vw, 18px); /* 반응형 폰트 크기 */
+  color: #333;
+  margin-left: 10px;
+  margin-top: 2px;
+  text-align: center; /* 가운데 정렬 */
+  width: 100%;
+  line-height: 1.5;
+}
+
+/* 챗봇 */
+.ch-chatbot-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  padding: 0;
+  width: 80%;
+  gap: 5px;
+}
+
+.ch-chatbot-page-img {
+  display: left;
+  width: 35%;
+  align-items: center;
+}
+
+.ch-chatbot-page-img img {
+  width: 140%;
+  margin-top: 5%;
+  height: 80%;
+}
+
+.ch-chatbot-page-content {
+  display: right;
+  width: 60%;
+}
+
+.ch-chatbot-page-content {
+  font-size: clamp(14px, 2vw, 18px); /* 반응형 폰트 크기 */
+  color: #333;
+  margin: 0;
+  text-align: center; /* 가운데 정렬 */
+  width: 100%;
+  line-height: 1.5;
+}
+
+.ch-cardmain,
+.ch-chatbot
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 95%;
+  box-sizing: border-box;
+  background-color: #a6e7f9 !important;
+  border-radius: 15px !important;
+  padding: 2rem !important;
+  cursor: pointer;
+  transition: transform 0.2s;
+  pointer-events: auto;
+}
+
+/* 카드 스타일  */
+.ch-class,
+.ch-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #a6e7f9 !important;
+  border-radius: 15px !important;
+  padding: 2rem !important;
+  cursor: pointer;
+  transition: transform 0.2s;
+  pointer-events: auto;
+}
+
+/* 카드 호버 효과 */
+.ch-class:hover,
+.ch-review:hover,
+.ch-cardmain:hover,
+.ch-chatbot:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(247, 117, 117, 0.05) !important;
+}
+
+/* 제목 */
+.ch-class h1,
+.ch-review h1,
+.ch-cardmain h1,
+.ch-chatbot h1 {
+  font-size: clamp(20px, 4vw, 32px); /* 반응형 폰트 크기 */
+  margin-top: 10px;
+  margin-bottom: 16px;
+  color: #333;
+  text-align: center; /* 가운데 정렬 */
+  width: 100%;
+  font-weight: 600;
+}
+
+/* 반응형 미디어 쿼리 */
+@media screen and (max-width: 768px) {
+  .ch-class h1,
+  .ch-review h1,
+  .ch-cardmain h1,
+  .ch-chatbot h1 {
+    margin-bottom: 12px;
+  }
+}

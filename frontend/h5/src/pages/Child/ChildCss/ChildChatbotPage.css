@@ -1,0 +1,181 @@
+.ch-chatbot-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.ch-chatbot-background-container {
+  width: 70%;
+  height: 90vh;
+  background-color: rgba(251, 241, 241, 0.95);
+  backdrop-filter: blur(10px);
+  border: none;
+  position: relative;
+  z-index: 2;
+  border-radius: 5%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 30px;
+}
+
+/* 스크롤바 커스텀 */
+.ch-chatbot-background-container::-webkit-scrollbar {
+  width: 8px;
+  height: 60%;
+  margin: 10% 0;
+}
+
+.ch-chatbot-background-container::-webkit-scrollbar-track {
+  margin: 30px 0;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+}
+
+.ch-chatbot-background-container::-webkit-scrollbar-thumb {
+  background: rgba(238, 163, 244, 0.5);
+  border-radius: 20px;
+}
+
+.ch-chatbot-background-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(218, 125, 225, 0.8);
+}
+
+.ch-chatbot-header-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  z-index: 2;
+}
+
+.ch-chatbot-cha {
+  width: 15%;
+  height: 15%;
+  object-fit: contain;
+}
+
+.ch-chatbot-title {
+  text-align: center;
+  margin-top: 1rem;
+  z-index: 2;
+}
+
+.ch-chatbot-title h1 {
+  font-size: 3rem;
+  font-family: "Jua";
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: rgb(218, 125, 225);
+}
+
+.ch-chatbot-title p {
+  font-size: 1.5rem;
+  font-family: "Jua";
+  margin-top: 2px;
+  margin-bottom: 15px;
+  color: rgb(0, 0, 0);
+}
+
+/* 대화창 */
+.ch-chat-bubble {
+  display: flex;
+  align-items: center;
+  max-width: 50%;
+  padding: 10px 15px;
+  margin-left: 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  word-break: break-word;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  gap: 20px;
+}
+
+/* 챗봇 말풍선 */
+.ch-chat-bubble.bot {
+  background-color: #f8fbfd;
+  align-self: flex-start;
+  border-radius: 20px 20px 20px 5px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3), inset 0 -2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  min-height: 70px; /* 기본 높이 설정 */
+}
+
+.ch-chat-bubble.user {
+  background-color: #9ec5f6;
+  align-self: flex-end;
+  border-radius: 20px 20px 5px 20px;
+}
+
+.ch-chatbot-icon-chatbotch {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.ch-chatbot-icon-chatuser {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 0;
+  border-radius: 50%;
+  background-color: white;
+  order: 2;
+}
+
+.ch-chat-text.bot-text {
+  font-size: 1.4rem;
+  font-family: "Jua";
+}
+
+/* 아동 말풍선 */
+.ch-chat-bubble.user {
+  background-color: #f8fbfd;
+  align-self: flex-end;
+  border-radius: 20px 20px 5px 20px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3), inset 0 -2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  min-height: 70px;
+  margin-right: 20px;
+  background-color: #b7d6fd;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ch-chatbot-icon-chatuser {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.ch-chat-text.user-text {
+  font-size: 1.6rem;
+  font-family: "Jua";
+  order: 2;
+}
+
+/* 애니메이션 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

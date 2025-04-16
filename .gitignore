@@ -1,0 +1,83 @@
+# .gitignore
+
+## IDE Specific
+### IntelliJ IDEA
+/.idea/
+/*.iml
+/out/
+
+### Visual Studio Code
+/.vscode/
+
+## Logs
+/logs/
+/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+## Dependency directories
+/node_modules/
+/bower_components/
+
+## Production files
+/dist/
+/build/
+
+## Java
+/*.class
+/*.jar
+/*.war
+/*.ear
+/target/
+
+## Spring Boot
+/*.log
+/*.pid
+/*.tmp
+/*.swp
+
+## Databases
+# MySQL
+/*.sql
+/*.db
+
+# MongoDB
+/data/
+/*.lock
+
+## Python
+/__pycache__/
+/*.pyc
+/*.pyo
+/*.pyd
+/.env
+/.venv
+
+## AWS
+/*.pem
+/*.key
+/*.crt
+/*.cert
+
+## TensorFlow
+/checkpoints/
+/*.ckpt.data-00000-of-00001
+/*.ckpt.index
+
+## Jenkins
+/.workspace/
+/*.lastStable
+/*.lastSuccessful
+/*.buildNumber
+
+## Environment Variables
+.env
+.env.*.local
+
+## OS Specific
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.~lock.*

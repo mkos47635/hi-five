@@ -1,0 +1,96 @@
+pipeline {
+    agent any
+
+    environment {
+        BACKEND_IMAGE   = "java_service"
+        BACKEND_TAG     = "latest"
+        FRONTEND_IMAGE  = "nginx"
+        FRONTEND_TAG    = "latest"
+        
+        DOCKER_COMPOSE_FILE = "project/docker-compose.yml"
+    }
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build Backend') {
+            steps {
+                dir('backend') {
+                    withCredentials([file(credentialsId: 'app-properties', variable: 'APP_PROPS')]) {
+                        sh 'mkdir -p src/main/resources'
+                        sh 'cp $APP_PROPS src/main/resources/application.properties'
+                    }
+
+                    sh 'chmod +x gradlew'
+                    sh './gradlew clean build'
+                    
+                    sh """
+                       docker build \
+                         --build-arg JAR_FILE=build/libs/backend-0.0.1-SNAPSHOT.jar \
+                         -t ${env.BACKEND_IMAGE}:${env.BACKEND_TAG} .
+                    """
+                }
+            }
+        }
+
+        stage('Build Frontend') {
+            steps {
+                dir('frontend/h5') {
+                    withCredentials([file(credentialsId: 'frontend-env', variable: 'FRONT_ENV')]) {
+                        sh "cp \"$FRONT_ENV\" .env"
+                    }
+                    
+                    script {
+                        docker.image('node:22').inside {
+                            sh 'npm install'
+                            sh 'npm run build'
+                        }
+                    }
+                    
+                    sh "docker build -t ${env.FRONTEND_IMAGE}:${env.FRONTEND_TAG} ."
+                }
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                script {
+                    echo "기존 java_service 및 nginx 컨테이너를 중지 및 제거합니다."
+                    sh "docker-compose -f ${env.DOCKER_COMPOSE_FILE} stop java_service nginx || true"
+                    sh "docker-compose -f ${env.DOCKER_COMPOSE_FILE} rm -f java_service nginx || true"
+                    
+                    echo "새 이미지로 컨테이너를 기동합니다."
+                    sh "docker-compose -f ${env.DOCKER_COMPOSE_FILE} up -d java_service nginx"
+                }
+            }
+        }
+        
+        stage('Cleanup Images') {
+            steps {
+                script {
+                    echo "사용하지 않는 Docker 이미지 정리 중..."
+                    // 현재 사용 중인 컨테이너에서 참조하지 않는 이미지들만 삭제됩니다.
+                    sh 'docker image prune -a -f'
+                }
+            }
+        }
+
+    }
+
+    post {
+        success {
+            echo "배포가 성공적으로 완료되었습니다!"
+        }
+        failure {
+            echo "배포 중 오류가 발생하였습니다."
+        }
+        always {
+            cleanWs()
+        }
+    }
+}

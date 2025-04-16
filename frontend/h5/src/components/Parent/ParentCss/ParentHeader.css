@@ -1,0 +1,63 @@
+.pa-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.pa-logo {
+  height: 40px;
+  width: auto;
+}
+
+.pa-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+.pa-nav-item {
+  cursor: pointer;
+  font-weight: bold;
+  color: #1A2A4D;
+}
+
+.pa-nav-item a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+/* hover 효과 */
+.pa-nav-item a::after {
+content: '';
+position: absolute;
+left: 50%;
+bottom: -5px;
+width: 0;
+height: 2px;
+background-color: #1A2A4D;
+transition: width 0.3s;
+transform: translateX(-50%);
+}
+
+.pa-nav-item a:hover::after,
+.pa-nav-item a.active::after {
+width: 100%;
+}
+
+/* 로그아웃 버튼은 활성화 상태 표시 제외 */
+.pa-nav-item:last-child a.active::after {
+width: 0;
+}

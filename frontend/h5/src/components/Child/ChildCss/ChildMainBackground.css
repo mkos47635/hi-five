@@ -1,0 +1,12 @@
+.ChildMainBackground {
+    position: fixed;  /* 화면 전체를 덮도록 설정 */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;  /* 다른 요소보다 뒤쪽으로 배치 */
+    background-size: cover;  /* 배경 이미지를 화면에 꽉 채움 */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  

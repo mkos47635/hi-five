@@ -1,0 +1,8 @@
+.screen-share {
+    width: 640px; /* 기본 크기 지정 */
+    height: 360px;
+}
+.shared-screen {
+    width: 100%;
+    height: 100%;
+}

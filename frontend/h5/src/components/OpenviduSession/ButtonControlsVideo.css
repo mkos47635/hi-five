@@ -1,0 +1,34 @@
+.web-button-controls-container {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+  z-index: 10;
+}
+
+.web-control-btn {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.web-control-btn:hover {
+  background: #666;
+}
+
+.web-control-btn.end-call {
+  background: #dc3545;
+}
+
+.web-control-btn.end-call:hover {
+  background: #c82333;
+}

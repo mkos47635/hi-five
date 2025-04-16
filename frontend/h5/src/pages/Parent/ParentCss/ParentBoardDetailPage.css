@@ -1,0 +1,206 @@
+/* 전체 페이지 배경 및 레이아웃 */
+.pa-detail-page {
+  background-color: #eef5fc; /* 연한 파랑/회색 배경 */
+  min-height: 100vh;
+  padding-top: 80px; /* 고정 헤더 높이에 맞춰 여백 */
+}
+
+/* 메인 컨테이너 */
+.pa-detail-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* 상단 "← 공지사항" 영역 */
+/* 상단 "← 공지사항" 영역 */
+.pa-detail-topbar {
+  display: flex;
+  align-items: center;
+  background-color: #fff; /* 🔹 배경 흰색 적용 */
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 🔹 박스 그림자 추가 */
+}
+
+.pa-detail-back-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-right: 8px;
+  color: #1A2A4D;
+  font-weight: bold;
+}
+
+.pa-detail-top-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1A2A4D;
+}
+
+
+/* 흰색 박스 */
+.pa-detail-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* 게시글 제목 */
+.pa-detail-post-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1A2A4D;
+}
+
+/* 작성자/작성일/조회수 테이블 */
+.pa-detail-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pa-detail-info-table th {
+  background-color: #f1f3f5;
+  padding: 10px;
+  color: #1A2A4D;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.pa-detail-info-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #f1f3f5;
+  color: #444;
+  font-weight: bold;
+}
+
+/* 본문 내용 */
+.pa-detail-content {
+  min-height: 150px; /* 본문 영역 높이 (임의값) */
+  background-color: #f9fcff;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #444;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+/* 첨부파일 영역 */
+.pa-detail-file {
+  background-color: #edf3fa;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: #444;
+  min-height: 60px; /* 파일 영역 높이 (임의값) */
+  font-weight: bold;
+}
+
+.co-detail-file-list {
+  margin-top: 20px;
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.co-detail-file-list h4 {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: #333;
+}
+
+.co-detail-file-list p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.co-detail-file-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.co-detail-file-list li {
+  margin: 5px 0;
+}
+
+.co-detail-file-item {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  padding:5px 5px 5px 10px;
+  margin: 5px 0;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  }
+
+  .co-detail-selected-files {
+    display: flex;   /* 가로 배치 */
+    flex-wrap: wrap; /* 넘치면 다음 줄로 */
+    gap: 8px;       /* 아이템 간격 */
+    margin-top: 10px;
+  }
+
+.co-detail-file-link {
+  color: #0066cc;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.co-detail-file-link:hover {
+  text-decoration: underline;
+}
+
+.co-detail-file-error {
+  color: #ff4444;
+  font-size: 14px;
+}
+
+.co-detail-file-download-btn {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  padding: 5px 20px;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-right: 10px;
+  
+}
+
+
+/* 첨부파일 버튼 컨테이너 수정 */
+.co-detail-file-buttons {
+  gap: 10px;        /* 버튼 사이의 간격 */
+  margin-top: 10px;
+}
+
+.p-file-name {
+  color: #495057;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;  /* 최대 너비 설정 */
+  font-weight: bold;
+}
+
+.co-detail-file-download-btn:hover {
+  background-color: #e9ecef;
+}
+
+
+.download-icon {
+  color: #6c757d;
+  font-weight: bold;
+}
+

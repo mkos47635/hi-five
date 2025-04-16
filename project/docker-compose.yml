@@ -1,0 +1,52 @@
+version: "3.8"
+services:
+  java_service:
+    image: java_service:latest
+    container_name: java17_h5
+    restart: unless-stopped
+    ports:
+      - "8443:8443"
+    # DB, 인증서 등 필요한 환경변수들은 production 환경에 맞게 설정
+    environment:
+      - DB_HOST=mysql_h5
+      - DB_PORT=3306
+      - DB_USER=mysql_h5
+      - DB_PASSWORD=6cN0A5Fl
+      - SERVER_URL=https://hi-five.site
+      - FILE_ACCESS_URL=https://cdn.hi-five.site
+      - MAIL_USERNAME=noreply.mail.h5@gmail.com
+      - MAIL_PASSWORD=ghsnycgzibikbkpk
+      - OPENVIDU_URL=https://hi-five.site/openvidu
+      - OPENVIDU_SECRET=rz7FazDNZkSqkJmr
+    volumes:
+      - /home/project_h5/project/uploads:/home/project_h5/project/uploads
+      - /etc/letsencrypt:/owncert:ro
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+
+    networks:
+      - app-network
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - java_service
+    volumes:
+      - /home/project_h5/project/nginx/conf.d:/etc/nginx/conf.d:ro
+      - /etc/letsencrypt:/etc/nginx/ssl:ro
+      - /home/project_h5/project/assets:/home/project_h5/project/assets:ro
+      - /home/project_h5/project/uploads:/home/project_h5/project/uploads
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,209 @@
+.co-page {
+    background-color: #eef5fc;
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+  
+  .co-container {
+    width: 70%;
+    max-width: 1200px;
+    margin: 50px auto;
+  }
+  
+  .co-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .co-title span {
+    margin-left: 16px;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  
+  .co-dropdown {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .co-section {
+    margin-top: 50px;
+  }
+  
+  .co-analysis-container,
+  .co-game-analysis {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .co-radar-chart {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .co-game-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .co-card-left {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;             
+    flex-direction: column;    
+    align-items: center;       
+    justify-content: flex-start;
+  }
+  
+  .co-card-right {
+    flex: 3;
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .co-card-left h3,
+  .co-card-right h3 {
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .co-game-card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .co-game-card p {
+    margin-left: 70px;
+  }
+  
+  .co-chart {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .co-stage-btn {
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #97B1E1;
+    border: none;
+    font-size: 2.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .co-stage-btn.left {
+    left: 1%;
+  }
+  
+  .co-stage-btn.right {
+    right: 1%;
+  }
+  
+  .co-game-wrapper .co-stage-btn {
+    display: none;
+  }
+  
+  .co-game-wrapper:hover .co-stage-btn {
+    display: block;
+  }
+  
+  .co-diary-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .co-diary-calendar .p-datepicker {
+    position: absolute !important;  
+    top: 100% !important;
+    left: 0 !important;
+    transform: none !important;
+    margin-top: 5px;
+    z-index: 9999;
+  }
+  
+  .co-videos-container {
+    background-color: #fff;
+    padding: 20px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .co-videos-calendar {
+    margin-top: 30px;
+    display: flex; 
+    justify-content: center;
+  }
+  
+  .co-videos-calendar .p-datepicker-inline {
+    outline: 3px solid #c8c8c8;
+    border-radius: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(0.9);
+    transform-origin: top center;
+  }
+  
+  /* .co-videos-calendar .p-datepicker {
+    padding: 20px !important;
+  } */
+  
+  .button-wrapper {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .co-button {
+    width: 200px;
+    height: 43px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #334a7e;
+    /* outline: 2px solid #0c1d42; */
+    border: none;
+    cursor: pointer;
+  }
+  
+  .co-button:hover {
+    background-color: #203461;
+  }
+  
+  .co-no-data {
+    min-height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #999;
+    text-align: center;
+  }

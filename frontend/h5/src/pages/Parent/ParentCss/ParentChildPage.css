@@ -1,0 +1,255 @@
+/* 전체 페이지 스타일 */
+.pa-page {
+  background-color: #eef5fc;
+  min-height: 100vh;
+  padding-top: 90px;
+}
+
+.pa-card-right p {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 45px;
+  margin-bottom: 50px;
+  font-size: 1.2rem;
+  letter-spacing: 0.15rem;
+}
+
+/* 컨테이너 */
+.pa-container {
+  width: 70%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+/* 제목 */
+.pa-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.pa-title span {
+  margin-left: 16px;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+/* 드롭다운 */
+.pa-dropdown {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* 섹션 */
+.pa-section {
+  margin-top: 50px;
+}
+
+.pa-analysis-container,
+.pa-game-analysis {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+.pa-radar-chart {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pa-game-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* 왼쪽(통계) 카드 */
+.pa-card-left {
+  flex: 2;
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  display: flex;             
+  flex-direction: column;    
+  align-items: center;       
+  justify-content: flex-start;
+}
+
+/* 오른쪽(감정 설명) 카드 */
+.pa-card-right {
+  flex: 3;
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pa-card-left h3,
+.pa-card-right h3 {
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.pa-game-card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.pa-game-card p {
+  margin-left: 70px;
+}
+
+.pa-chart {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.pa-stage-btn {
+  position: absolute;
+  top: 48%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  color: #97B1E1;
+  border: none;
+  font-size: 2.3rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.pa-stage-btn.left {
+  left: 1%;
+}
+.pa-stage-btn.right {
+  right: 1%;
+}
+.pa-game-wrapper .pa-stage-btn {
+  display: none;
+}
+.pa-game-wrapper:hover .pa-stage-btn {
+  display: block;
+}
+
+/* 감정 일기 (예시) */
+.pa-diary-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 실제 달력 팝업 .p-datepicker 위치 강제 */
+.pa-diary-calendar .p-datepicker {
+  position: absolute !important;  
+  top: 100% !important;
+  left: 0 !important;
+  transform: none !important;
+  margin-top: 5px;
+  z-index: 9999;
+}
+
+/* 학습 영상 조회 (예시) */
+.pa-videos-container {
+  background-color: #fff;
+  margin-bottom: 130px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 달력을 가로로 배치 */
+.pa-videos-calendar {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.video-calendar-left {
+  width: 50%;
+}
+
+.video-calendar-right {
+  width: 50%;
+}
+
+/* 달력 자체 스타일 */
+.pa-videos-calendar .p-datepicker-inline {
+  /* ▼ 기존 3px -> 1px로 줄이거나 필요하면 없애도 됨 */
+  outline: 3px solid #c8c8c8;
+  border-radius: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  /* ▼ 크기 축소(예: 0.9). 비율은 그대로 유지됨 */
+  transform: scale(0.9);
+  transform-origin: top center;
+}
+
+/* 달력 내부 여백(기존 30px -> 20px) */
+.pa-videos-calendar .p-datepicker {
+  padding: 40px !important;
+}
+
+/* 버튼 컨테이너 */
+.button-wrapper {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* 버튼 */
+.pa-button {
+  width: 200px;
+  height: 43px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #334a7e;
+  outline: 2px solid #0c1d42;
+  border: none;
+  cursor: pointer;
+}
+.pa-button:hover {
+  background-color: #203461;
+}
+
+.pa-no-data {
+  min-height: 400px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #999;
+  text-align: center;
+}
+
+/* 📌 상담 예약된 날짜 스타일 */
+.highlight-circle {
+  position: relative;
+}
+
+.highlight-circle::before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  background-color: rgba(255, 107, 107, 0.3); /* 반투명 파란색 */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

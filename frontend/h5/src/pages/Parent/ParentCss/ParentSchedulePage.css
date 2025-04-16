@@ -1,0 +1,345 @@
+.pa-schedule-container {
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EEF5FC;
+}
+
+.pa-schedule-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 5px auto;
+    display: flex;
+    padding: 100px 10px;
+    gap: 50px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.pa-calendar-section {
+    background-color: white;
+    padding: 10px 40px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 600px;
+}
+
+.pa-notcalendar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    min-width: 400px;
+}
+
+.pa-select-date {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pa-schedule-section {
+    flex: 1;
+    background-color: white;
+    padding: 10px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    min-height: 436px;
+}
+
+.pa-schedule-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.pa-schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 409px;
+    overflow-y: auto; /* 스크롤 활성화 */
+    scrollbar-width: none; /* Firefox에서 스크롤바 숨기기 */
+    -ms-overflow-style: none; /* IE/Edge에서 스크롤바 숨기기 */
+    padding-right: 5px; /* 내용물이 잘리지 않도록 여백 추가 */
+    padding-bottom: 5px;
+}
+
+.pa-schedule-item {
+    background-color: #EEF5FC;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+    transition: box-shadow 0.2s ease; /* 부드러운 그림자 효과 */
+}
+
+.pa-schedule-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* 호버 시 그림자 강화 */
+}
+
+.pa-schedule-info {
+    margin-bottom: 15px;
+}
+
+.pa-schedule-info p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pa-button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.pa-btn {
+    padding: 4px 12px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pa-btn-join {
+    background-color: #3A5E8D;
+}
+
+/* 참여완료 버튼 스타일 */
+.pa-btn-completed {
+    background-color: #9ca3af !important;
+    color: white !important;
+    cursor: not-allowed !important;
+}
+
+/* PrimeReact Calendar 커스터마이징 */
+:root {
+    --primary-color: #1A2A4D;
+}
+
+/* Calendar 커스터마이징 */
+.p-calendar {
+    width: 100%;
+}
+
+.p-datepicker {
+    border: none !important;
+    padding: 0 !important;
+}
+
+.p-datepicker table {
+    margin: 0.5rem 0;
+}
+
+.p-datepicker table th {
+    font-size: 18px !important;
+    color: #1A2A4D !important;
+    font-weight: bold !important;
+    padding: 0.5rem !important;
+}
+
+.p-datepicker table td {
+    padding: 0.5rem !important;
+}
+
+.p-datepicker table td > span {
+    font-size: 16px !important;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+}
+
+.p-datepicker .p-datepicker-header {
+    background: transparent !important;
+    border: none !important;
+    padding: 0.5rem 0 !important;
+}
+
+.p-datepicker .p-yearpicker {
+    color: #002753 !important;
+}
+
+.p-datepicker .p-monthpicker {
+    color: #002753 !important;
+}
+
+.p-yearpicker-year, .p-monthpicker-month {
+    border-radius: 4px !important;
+}
+
+.p-yearpicker-year.p-highlight, .p-monthpicker-month.p-highlight {
+    background-color: #34599B !important;
+    color: white !important;
+}
+
+/* 달력 네비게이터 스타일링 */
+.p-datepicker .p-datepicker-header .p-datepicker-title {
+    display: flex !important;
+    gap: 0.5rem !important;
+    flex-direction: row-reverse !important;
+}
+
+.p-datepicker .p-datepicker-header .p-datepicker-title select {
+    font-size: 18px !important;
+    border: none !important;
+    background: transparent !important;
+    color: #1A2A4D !important;
+    font-weight: bold !important;
+}
+
+/* 달력 화살표 버튼 스타일링 */
+.p-datepicker .p-datepicker-header .p-datepicker-prev,
+.p-datepicker .p-datepicker-header .p-datepicker-next {
+    color: #1A2A4D !important;
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+}
+
+/* 오늘 날짜 스타일링 */
+.p-datepicker table td.p-datepicker-today > span {
+    background-color: #EEF5FC !important;
+    color: #1A2A4D !important;
+}
+
+
+/* 년도 선택 드롭다운에 '년' 추가 */
+.p-datepicker .p-datepicker-header .p-datepicker-title .p-yearpicker option::after {
+    content: '년';
+}
+
+/* 년도 선택기 커스터마이징 */
+.p-yearpicker .p-yearpicker-year {
+    position: relative;
+}
+
+.p-yearpicker .p-yearpicker-year::after {
+    content: '년';
+    position: absolute;
+    right: -20px;
+}
+
+/* 달력 제목 부분의 년도 표시 */
+.p-datepicker-year::after {
+    content: '년';
+    margin-left: 2px;
+}
+
+/* Calendar 커스터마이징 */
+.p-calendar,
+.p-datepicker,
+.p-datepicker table,
+.p-datepicker-header,
+.p-datepicker-title,
+.p-datepicker-month,
+.p-datepicker-year,
+.p-datepicker select option,
+.p-datepicker table td span,
+.p-datepicker table th > span {
+    font-family: 'CookieRun', sans-serif !important;
+}
+
+/* 요일 헤더에 대한 특별한 선택자 */
+.p-datepicker table th {
+    font-family: 'CookieRun', sans-serif !important;
+}
+
+/* 날짜 숫자에 대한 특별한 선택자 */
+.p-datepicker table td > span {
+    font-family: 'CookieRun', sans-serif !important;
+}
+
+/* 달력의 모든 텍스트 요소에 대한 폰트 적용 */
+.p-datepicker * {
+    font-family: 'CookieRun', sans-serif !important;
+}
+
+/* 드롭다운 옵션 크기 */
+.p-datepicker select option {
+    font-size: 16px !important;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .pa-schedule-wrapper {
+        flex-direction: column;
+    }
+    
+    .pa-calendar-section,
+    .pa-schedule-section {
+        width: 100%;
+    }
+}
+
+.pa-no-schedules {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    color: #1A2A4D;
+    height: 409px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 2px dashed #1A2A4D;
+  }
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #325D88;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.pa-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* 📌 상담 예약된 날짜 스타일 */
+.highlight-circle {
+    position: relative;
+}
+
+.highlight-circle::before {
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    background-color: rgba(255, 107, 107, 0.3); /* 반투명 파란색 */
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

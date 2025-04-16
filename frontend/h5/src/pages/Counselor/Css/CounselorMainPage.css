@@ -1,0 +1,349 @@
+.co_main_container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem 1rem;
+}
+
+.co_main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.co_main_total {
+  width: 100%;
+}
+
+.co_notice_wrapper {
+  flex: 1;
+  width: 100%;
+  /* padding: 1.0rem 0; */
+  background-color: #f9fafb
+}
+
+.co_hero_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5rem 0;
+  background-color: #f0f7ff;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+  /* width: 100vw; */
+}
+
+@media (max-width: 768px) {
+  .co_hero_section {
+    flex-direction: column;
+  }
+}
+
+.co_hero_content {
+    padding-left: 4rem;
+    flex: 1;
+    text-align: left;
+  }
+
+.co_service_title {
+  font-size: 1.8rem;
+  color: #2d4356;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.co_service_subtitle span {
+    font-family: 'CookieRun', sans-serif;
+    font-size: 2rem;
+   }
+
+.co_service_subtitle {
+  font-size: 1.9rem;
+  color: #2d4356;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+.co_counselor_intro {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  margin-top: 0.1rem;
+  font-weight: bold;
+  color: #2d4356;
+}
+
+.co_highlight {
+  color: #FFBD59;
+  font-weight: 900;
+  font-size: 2.9rem;
+  text-shadow: 
+    -3px -3px 0 #804D01,
+    -3px -2px 0 #804D01,
+    -3px -1px 0 #804D01,
+    -3px 0 0 #804D01,
+    -3px 1px 0 #804D01,
+    -3px 2px 0 #804D01,
+    -3px 3px 0 #804D01,
+    -2px -3px 0 #804D01,
+    -2px 3px 0 #804D01,
+    -1px -3px 0 #804D01,
+    -1px 3px 0 #804D01,
+    0 -3px 0 #804D01,
+    0 3px 0 #804D01,
+    1px -3px 0 #804D01,
+    1px 3px 0 #804D01,
+    2px -3px 0 #804D01,
+    2px 3px 0 #804D01,
+    3px -3px 0 #804D01,
+    3px -2px 0 #804D01,
+    3px -1px 0 #804D01,
+    3px 0 0 #804D01,
+    3px 1px 0 #804D01,
+    3px 2px 0 #804D01,
+    3px 3px 0 #804D01;
+ }
+
+
+.co_schedule_btn {
+  background-color: #6b8cb3 !important;
+  border: none !important;
+  border-radius: 8px;
+  padding: 0.6rem 4rem !important;
+  font-weight: 600 !important;
+  font-size: 18px;
+}
+
+.co_hero_image {
+    display: flex;
+    justify-content: center;
+   }
+
+.co_hero_image img {
+    max-width: 450px; 
+    height: auto;
+   }
+
+.co_notice_section {
+  margin-top: 3.0rem;
+  width: 100%;
+}
+
+.co_notice_header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.co_notice_line {
+  flex: 1;
+  height: 1.5px;
+  background-color: #c5c7cb;
+  margin-right: 1rem;
+}
+
+.co_notice_line_end {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px 4px 0;
+  border: none;
+  background: transparent;
+  color: #666;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.co_notice_line_end .pi-plus {
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.co_notice_title {
+  font-size: 1.5rem;
+  color: #2d4356;
+  margin: 0;
+  white-space: nowrap;
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+.c-co_carousel .p-carousel {
+  position: relative;
+}
+
+.c-co_carousel .p-carousel-content {
+  position: relative;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+.c-co_carousel .p-carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.c-co_carousel .p-carousel-indicators {
+  display: none;
+}
+
+.c-carousel-container {
+  position: relative;
+}
+ 
+.c-custom-indicator {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #666;
+  z-index: 1;
+}
+
+.c-co_carousel .p-carousel-prev,
+.c-co_carousel .p-carousel-next {
+  position: absolute;
+  bottom: 0;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  color: #666;
+}
+ 
+ .c-co_carousel .c-custom-indicator.p-highlight {
+  background: #6b8cb3;
+  color: #fff;
+ }
+ 
+ .c-co_carousel .p-carousel-prev {
+  left: calc(50% - 60px);
+}
+
+.c-co_carousel .p-carousel-next {
+  right: calc(50% - 60px);
+}
+
+.c-co_carousel .p-carousel-item {
+  padding: 0 8px;
+}
+
+.c-co_carousel .p-carousel-items-content {
+  transition: transform 2.5s linear !important;
+}
+
+ .co_notice_card {
+  border-radius: 20px !important;
+  padding: 0.5rem !important;
+  margin-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.08) 1px 4px 4px 1px  !important;
+  background-color: white;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: default !important;
+}
+
+.co_notice_card:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 8px !important;
+}
+  .co_notice_tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .co_tag_group {
+    display: flex;
+    gap: 0.2rem;
+  }
+  
+  .co_tag {
+    padding: 0.3rem 0.5rem;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+  
+  .co_tag_notice, .co_tag_author {
+    background-color: #f0f7ff;
+    color: #405d77;
+    
+  }
+  
+  .co_tag_new {
+    color: #deab3b;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+  
+  .co_notice_content {
+  font-size: 1.0rem;                /* 글자 크기 설정 */
+   overflow: hidden;                 /* 내용이 넘칠 경우 숨김 */
+   text-overflow: ellipsis;         /* 넘친 텍스트를 ...으로 표시 */
+   display: -webkit-box;            /* 웹킷 기반 브라우저를 위한 flexbox 설정 */
+   -webkit-line-clamp: 3;           /* 최대 3줄까지 표시 */
+   -webkit-box-orient: vertical;    /* 텍스트 방향을 세로로 설정 */
+   line-height: 1.5;                /* 줄 간격을 글자 크기의 1.5배로 설정 */
+   height: 4.5em;                   /* 높이 = line-height * 표시할 줄 수 */
+   margin: 1rem 0;      
+   padding-left: 1rem;
+   padding-right: 1rem;
+   word-wrap: break-word;      /* 단어 단위 줄바꿈 */
+   word-break: break-all;      /* 필요시 문자 단위 줄바꿈 */
+   max-width: 100%;            /* 최대 너비 제한 */
+  }
+  
+  .co_notice_date {
+    color: #999;
+    font-size: 0.7rem;
+    text-align: right;
+  }
+
+  .p-card-body {
+    padding: 0px
+  }
+
+  .p-card-content {
+    padding: 5px;
+  }
+
+  /* 반응형 스타일 */
+@media screen and (max-width: 1100px) {
+  .c-carousel-container {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .c-carousel-container {
+    padding: 0 25px;
+  }
+  
+  .co_notice_card {
+    margin: 0 8px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .c-carousel-container {
+    padding: 0 20px;
+  }
+}
+
+ 

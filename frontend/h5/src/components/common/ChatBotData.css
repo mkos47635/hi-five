@@ -1,0 +1,98 @@
+/* 최상위 컨테이너 */
+.chatbot-history-page {
+    background: #ffffff; /* 배경색 예시 */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* 챗봇 기록 영역 */
+  .chatbot-history-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  
+  /* 마음이 캐릭터 이미지 */
+  .chatbot-character {
+    width: 120px;
+    height: auto;
+  }
+  
+  /* 챗봇 대화 카드를 감싸는 컨테이너 */
+  .chatbot-history-card {
+    padding: 1rem;
+    border-radius: 1rem;
+    background: rgba(251, 241, 241, 0.95);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* 실제 채팅 메시지들이 들어가는 영역 */
+  .chatbot-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* 말풍선 기본 스타일 */
+  .chat-bubble {
+    display: flex;
+    align-items: flex-end;
+    max-width: 80%;
+  }
+  
+  /* 봇 말풍선 */
+  .chat-bubble.bot {
+    align-self: flex-start;
+  }
+  
+  /* 사용자 말풍선 */
+  .chat-bubble.user {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+  }
+  
+  /* 아이콘 공통 스타일 */
+  .chatbot-icon,
+  .chatuser-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+  }
+
+  .chatbot-icon{
+    margin-left: 10px;
+  }
+  
+  /* 말풍선 텍스트 */
+  .chat-text {
+    padding: 0.7rem 1rem;
+    border-radius: 16px;
+    font-size: 1rem;
+    line-height: 1.4;
+    white-space: pre-wrap;
+  }
+  
+  /* 봇 텍스트 스타일 */
+  .bot-text {
+    background-color: #e9f3ff; /* 연한 하늘색 예시 */
+    color: #333;
+  }
+  
+  /* 사용자 텍스트 스타일 */
+  .user-text {
+    background-color: #d1ffd1; /* 연한 그린 예시 */
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  .no-chat-data {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #999;
+    padding: 20px;
+  }
+  

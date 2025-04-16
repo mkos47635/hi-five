@@ -1,0 +1,504 @@
+.co-schedule-container {
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: space-between;
+    background-color: #EEF5FC;
+}
+
+.co-schedule-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 5px auto;
+    display: flex;
+    padding: 70px 10px;
+    gap: 50px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.co-calendar-section {
+    background-color: white;
+    padding: 15px 40px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 525px;
+    /* min-width: 600px; */
+}
+
+.co-notcalendar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    min-width: 400px;
+    max-width: 400px;
+}
+
+.co-select-date {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.co-schedule-section {
+    flex: 1;
+    background-color: white;
+    padding: 10px 30px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    min-height: 525px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.co-schedule-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.co-schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 370px; /* 2개의 아이템이 보이도록 높이 제한 */
+    overflow-y: auto; /* 스크롤 활성화 */
+    scrollbar-width: none; /* Firefox에서 스크롤바 숨기기 */
+    -ms-overflow-style: none; /* IE/Edge에서 스크롤바 숨기기 */
+    padding-bottom: 5px;
+}
+
+.co-schedule-item {
+    background-color: #EEF5FC;
+    padding: 8px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+    transition: box-shadow 0.2s ease; /* 부드러운 그림자 효과 */
+}
+
+.co-schedule-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* 호버 시 그림자 강화 */
+}
+
+.co-schedule-info {
+    margin-bottom: 10px;
+}
+
+.co-schedule-info p {
+    margin: 3px 0;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.co-button-group {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.co-btn {
+    padding: 4px 12px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.co-btn-join {
+    background-color: #3A5E8D;
+}
+
+.co-btn-modify {
+    background-color: #3A5E8D;
+}
+
+.co-btn-delete {
+    background-color: #6c757d;
+}
+
+.co-schedule-create-btn {
+    padding: 8px;
+    background-color: #3A5E8D;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    width: 150px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.co-schedule-header-row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.co-schedule-info-first {
+    display: flex;
+    justify-content: space-between;
+    height: 26px;
+}
+
+.co-schedule-date {
+    /* position: r; */
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #374151;
+    font-weight: 500;
+}
+
+/* 검색 관련 스타일 */
+.co-schedule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.co-search-input {
+    border-radius: 20px;
+    padding: 5px 0 5px 8px;
+    font-size: 14px;
+    width: 180px;
+    border: 2px solid #374151;  /* 기본 테두리 색상 추가 */
+    transition: border-color 0.3s ease;  /* 부드러운 색상 변화를 위한 transition */
+}
+
+.co-search-input:focus {
+    outline: none;  /* 기본 focus 효과 제거 */
+    border-color: #69A6DF;  /* focus 시 파란색 테두리 */
+    box-shadow: 0 0 0 1px #69A6DF;  /* 더 선명한 테두리를 위한 shadow 효과 */
+}
+
+.co-search-container {
+    width: 160px;
+    position: relative;
+}
+
+.co-schedule-title {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.p-input-icon-left {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.p-input-icon-left i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    color: #6B7280;
+    z-index: 1;
+}
+
+/* 참여완료 버튼 스타일 */
+.co-btn-completed {
+    background-color: #9ca3af !important;
+    color: white !important;
+    cursor: not-allowed !important;
+}
+
+
+
+/* PrimeReact Calendar 커스터마이징 */
+:root {
+    --primary-color: #1A2A4D;
+}
+
+/* Calendar 커스터마이징 */
+.p-calendar {
+    width: 100%;
+}
+
+.p-datepicker {
+    border: none !important;
+    padding: 0 !important;
+}
+
+.p-datepicker table {
+    margin: 0.5rem 0;
+}
+
+.p-datepicker table th {
+    font-size: 18px !important;
+    color: #1A2A4D !important;
+    font-weight: bold !important;
+    padding: 0.5rem !important;
+}
+
+.p-datepicker table td {
+    padding: 0.5rem !important;
+}
+
+.p-datepicker table td > span {
+    font-size: 16px !important;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+}
+
+/* 일반 날짜에 호버 효과 적용 */
+.p-datepicker table td:not(.p-highlight):not(.p-disabled):hover > span {
+    background-color: #FFCC80 !important;
+    color: white !important;
+}
+
+.p-datepicker .p-datepicker-header {
+    background: transparent !important;
+    border: none !important;
+    padding: 0.5rem 0 !important;
+}
+
+.p-datepicker .p-yearpicker {
+    color: #002753 !important;
+}
+
+/* 선택된 날짜에 호버 효과 적용 */
+.p-datepicker table td > span.p-highlight {
+    background-color: #fbd090;
+}
+
+.p-datepicker .p-monthpicker {
+    color: #002753 !important;
+}
+
+.p-yearpicker-year, .p-monthpicker-month {
+    border-radius: 4px !important;
+}
+
+.p-yearpicker-year.p-highlight, .p-monthpicker-month.p-highlight {
+    background-color: #34599B !important;
+    color: white !important;
+}
+
+/* 달력 네비게이터 스타일링 */
+.p-datepicker .p-datepicker-header .p-datepicker-title {
+    display: flex !important;
+    gap: 0.5rem !important;
+    flex-direction: row-reverse !important;
+}
+
+.p-datepicker .p-datepicker-header .p-datepicker-title select {
+    font-size: 18px !important;
+    border: none !important;
+    background: transparent !important;
+    color: #1A2A4D !important;
+    font-weight: bold !important;
+}
+
+/* 달력 화살표 버튼 스타일링 */
+.p-datepicker .p-datepicker-header .p-datepicker-prev,
+.p-datepicker .p-datepicker-header .p-datepicker-next {
+    color: #1A2A4D !important;
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+}
+
+/* 오늘 날짜 스타일링 */
+.p-datepicker table td.p-datepicker-today > span {
+    background-color: #EEF5FC !important;
+    color: #1A2A4D !important;
+}
+
+/* 오늘 날짜가 선택되었을 때 스타일링 */
+.p-datepicker table td.p-datepicker-today.p-highlight > span {
+    background-color: #FFB74D !important;
+    color: white !important;
+}
+
+/* 년도 선택 드롭다운에 '년' 추가 */
+.p-datepicker .p-datepicker-header .p-datepicker-title .p-yearpicker option::after {
+    content: '년';
+}
+
+/* 년도 선택기 커스터마이징 */
+.p-yearpicker .p-yearpicker-year {
+    position: relative;
+}
+
+.p-yearpicker .p-yearpicker-year::after {
+    content: '년';
+    position: absolute;
+    right: -20px;
+}
+
+/* 달력 제목 부분의 년도 표시 */
+.p-datepicker-year::after {
+    content: '년';
+    margin-left: 2px;
+}
+
+/* Calendar 커스터마이징 */
+.p-calendar,
+.p-datepicker,
+.p-datepicker table,
+.p-datepicker-header,
+.p-datepicker-title,
+.p-datepicker-month,
+.p-datepicker-year,
+.p-datepicker select option,
+.p-datepicker table td span,
+.p-datepicker table th > span {
+    font-family: 'CookieRun', sans-serif !important;
+}
+
+/* 요일 헤더에 대한 특별한 선택자 */
+.p-datepicker table th {
+    font-family: 'CookieRun', sans-serif !important;
+}
+
+/* 날짜 숫자에 대한 특별한 선택자 */
+.p-datepicker table td > span {
+    font-family: 'CookieRun', sans-serif !important;
+}
+
+/* 달력의 모든 텍스트 요소에 대한 폰트 적용 */
+.p-datepicker * {
+    font-family: 'CookieRun', sans-serif !important;
+}
+
+/* 드롭다운 옵션 크기 */
+.p-datepicker select option {
+    font-size: 16px !important;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .co-schedule-wrapper {
+        flex-direction: column;
+    }
+    
+    .co-calendar-section,
+    .co-schedule-section {
+        width: 100%;
+    }
+}
+
+.co-no-schedules {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    color: #1A2A4D;
+    height: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 2px dashed #1A2A4D;
+    /* background-color: #69A6DF; */
+  }
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #325D88;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.co-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* 검색 컨테이너 */
+.co-search-container {
+    width: 180px;
+    position: relative;
+}
+
+
+/* 검색 드롭다운 스타일 */
+.co-search-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 220px;
+    overflow-y: auto;
+    z-index: 10;
+    padding: 6px 4px;
+    margin: 0;
+}
+
+/* 드롭다운 내부 아이템 */
+.co-search-dropdown-item {
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.co-search-dropdown-item:hover {
+    background-color: #f3f4f6;
+}
+
+/* 스크롤바 숨기기 (크로스 브라우징) */
+.co-search-dropdown::-webkit-scrollbar {
+    display: none;
+}
+
+.co-search-dropdown {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* CounselorSchedulePage.css */
+.highlight-circle {
+    background-color: #f9c74f !important; /* 배경색 강조 */
+    border-radius: 50%; /* 원형 강조 */
+    color: white !important;
+    font-weight: bold;
+
+    display: inline-block;
+    width: 2rem;       /* 날짜 셀 크기에 맞게 조정 */
+    height: 2rem;      /* 날짜 셀 크기에 맞게 조정 */
+    line-height: 2rem; /* 수직 중앙 정렬 */
+    text-align: center;
+}

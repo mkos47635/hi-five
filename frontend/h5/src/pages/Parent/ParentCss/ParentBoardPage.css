@@ -1,0 +1,218 @@
+.pa-board-page {
+  background-color: #EEF5FC; /* 전체 페이지 배경 */
+  min-height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* =====================
+   (위) 탭만 들어있는 흰색 박스
+   ===================== */
+.pa-board-top-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto 0 auto; /* 상단 50px 여백, 좌우 auto */
+  background-color: #fff; /* 흰색 박스 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* =====================
+   (아래) 검색 + 테이블
+   ===================== */
+.pa-board-bottom-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto 60px;
+  padding: 20px;
+  background-color: #fff; /* 흰색 박스 */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* =====================
+   탭 영역
+   ===================== */
+.pa-board-tabs {
+  display: flex;
+}
+
+.pa-board-tab {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #1A2A4D;
+  width: 100%;
+  height: 60px;
+  transition: background-color 0.3s;
+}
+
+.pa-board-tab:not(.pa-active-tab):hover {
+  background-color: #f0f2f5;
+}
+
+.pa-active-tab {
+  color: #fff;
+  background-color: #B1CCE2;
+}
+
+/* =====================
+   검색바 영역
+   ===================== */
+.pa-board-searchbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+/* 드롭다운 감싸는 컨테이너 */
+.pa-board-search-select {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.pa-board-search-label {
+  font-weight: bold;
+  padding: 6px 10px;
+  user-select: none;
+}
+
+.pa-board-search-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: none;
+  min-width: 80px;
+  z-index: 999;
+}
+
+.pa-board-search-select:hover .pa-board-search-options {
+  display: block;
+}
+
+.pa-board-search-option {
+  padding: 6px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.pa-board-search-option:hover {
+  background-color: #f0f2f5;
+}
+
+.pa-board-search-input {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.pa-board-search-button {
+  padding: 6px 12px;
+  background-color: #B1CCE2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pa-board-search-button:hover {
+  background-color: #9bbad3;
+}
+
+/* =====================
+   테이블 영역
+   ===================== */
+/* 테이블 헤더 (제목 + 글쓰기 버튼) */
+.pa-board-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pa-board-table-title {
+  font-size: 1.4rem;
+  color: #1A2A4D;
+  margin: 0;
+}
+
+/* 글쓰기 버튼 (질문 탭에서만) */
+.pa-board-write-button {
+  background-color: #3A5E8D;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.pa-board-write-button:hover {
+  background-color: #25406b;
+}
+
+.pa-board-table-container {
+  margin-top: 10px;
+}
+
+.pa-board-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.pa-board-table th {
+  background-color: #f1f3f5;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  color: #1A2A4D;
+}
+
+.pa-board-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #f1f3f5;
+  color: #444;
+}
+
+.pa-empty-row {
+  color: #999;
+}
+
+/* =====================
+   페이지네이션
+   ===================== */
+.pa-board-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 15px;
+}
+
+.pa-board-pagination button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  min-width: 50px;
+}
+
+.pa-board-pagination button:hover {
+  background-color: #f0f2f5;
+}
+
+.pa-board-pagination button.pa-active-page {
+  background-color: #B1CCE2;
+  color: #fff;
+  border-color: #B1CCE2;
+}

@@ -1,0 +1,33 @@
+/* 선택자 우선순위를 높이기 위해 수정 */
+.swal2-popup.s-my-swal-popup {
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: 1px solid black;
+  width: 400px !important;
+  z-index: 99999 !important;
+}
+
+.swal2-title.s-my-swal-title {
+  font-size: 28px;
+  color: #1A2A4D !important;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid black;
+}
+
+.swal2-html-container .s-swal-text {
+  font-size: 1.2em;
+  font-weight: 900;
+  margin: 5px 0 2px 0;
+}
+
+.swal2-confirm.s-my-swal-confirm-button,
+.swal2-cancel.s-my-swal-cancel-button {
+  background-color: #3A5E8D !important;
+  color: white !important;
+  font-size: 18px !important;
+  border-radius: 10px !important;
+  padding: 8px 20px !important;
+  margin: 5px !important;
+  border: none !important;
+  cursor: pointer !important;
+}
