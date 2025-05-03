@@ -1,6 +1,6 @@
 # 😍 자폐 스펙트럼 아이들을 위한 감정 학습 플랫폼 hi-five
 
-![main](https://github.com/user-attachments/assets/e850dccf-0692-484a-8a9e-cc01fd78ba1b)
+![main](./img/main.png)
 
 - 배포 URL : https://hi-five.site
 - 상담사 Test ID : chanhoan01@gmail.com
@@ -135,8 +135,7 @@ hi-five/
 <br>
 
 ## 4. 프로젝트 아키텍쳐
-
-<img src="https://github.com/user-attachments/assets/46222be2-418a-4fe2-89b6-7d3303335229" width="100%" height="100%"/>
+<img src="./img/architecture.png" alt="architecture" style="width:100%; height:auto;" />
 
 ## 5. 역할 분담
 
@@ -232,7 +231,7 @@ hi-five/
 
 | 상담사 로그인                                                                             |
 | ----------------------------------------------------------------------------------------- |
-| ![login](https://github.com/user-attachments/assets/3baf1cae-fc3f-403c-99b8-f3d40b3c417f) |
+| ![login](./img/login.gif) |
 
 <br>
 
@@ -243,7 +242,7 @@ hi-five/
 
 | 상담사 메인페이지                                                                                   |
 | --------------------------------------------------------------------------------------------------- |
-| ![consultant_main](https://github.com/user-attachments/assets/160820e2-c073-4c3f-b645-6df6d5772164) |
+| ![consultant_main](./img/consultant_main.gif) |
 
 <br>
 
@@ -256,7 +255,7 @@ hi-five/
 
 | 상담사 우리아이들 페이지, 데이터 분석 페이지                                                            |
 | ------------------------------------------------------------------------------------------------------- |
-| ![consultant_children](https://github.com/user-attachments/assets/8b0268cf-0e6c-43c0-ab4c-1a1888267198) |
+| ![consultant_children](./img/myChild_dataAnalysis.gif) |
 
 <br>
 
@@ -268,7 +267,7 @@ hi-five/
 
 | 상담사 상담일정 페이지                                                                               |
 | ---------------------------------------------------------------------------------------------------- |
-| ![consultant_schdl](https://github.com/user-attachments/assets/33595f8f-5b29-45a9-ae71-20f249208064) |
+| ![consultant_schdl](./img/consultant_schdl.gif) |
 
 <br>
 
@@ -278,7 +277,7 @@ hi-five/
 
 | 학부모 계정등록                                                                                             |
 | ----------------------------------------------------------------------------------------------------------- |
-| ![register_parent_account](https://github.com/user-attachments/assets/0fb25e8f-5fd8-4fe2-bba0-039134aa21a0) |
+| ![register_parent_account](./img/register.gif) |
 
 <br>
 
@@ -289,7 +288,7 @@ hi-five/
 
 | 학부모 계정 첫 로그인                                                                                  |
 | ------------------------------------------------------------------------------------------------------ |
-| ![parent_first_login](https://github.com/user-attachments/assets/73e2d94a-e28f-4a03-96b9-0d6bec6c5130) |
+| ![parent_first_login](./img/first_login.gif) |
 
 <br>
 
@@ -300,7 +299,7 @@ hi-five/
 
 | 학부모 상담일정 페이지                                                                           |
 | ------------------------------------------------------------------------------------------------ |
-| ![parent_schdl](https://github.com/user-attachments/assets/e2534b8e-818d-44f4-bac8-0502970ebe49) |
+| ![parent_schdl](./img/parent_schdl.gif) |
 
 <br>
 
@@ -311,7 +310,7 @@ hi-five/
 
 | 아이 페이지                                                                                    |
 | ---------------------------------------------------------------------------------------------- |
-| ![child_page](https://github.com/user-attachments/assets/762e05b1-fadc-4a26-a665-d09f0881c6a6) |
+| ![child_page](./img/child_page.gif) |
 
 <br>
 
