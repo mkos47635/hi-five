@@ -357,8 +357,8 @@ hi-five/
 
 | 게시판                                                                                    |
 | ----------------------------------------------------------------------------------------- |
-| ![board](https://github.com/user-attachments/assets/41abc817-0dbe-4842-944c-a0a89da7ec44) |
+| ![board](./img/card_board.gif) |
 
 <br>
 
-![team](https://github.com/user-attachments/assets/90c4d2f6-4760-42e0-ab50-8408201584dd)
+![team](./img/team.png)
